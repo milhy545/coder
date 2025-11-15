@@ -378,7 +378,7 @@ module "personalize" {
 module "cmux" {
   count     = contains(jsondecode(data.coder_parameter.ide_choices.value), "cmux") ? data.coder_workspace.me.start_count : 0
   source    = "registry.coder.com/coder/cmux/coder"
-  version   = "1.0.0"
+  version   = "1.0.2"
   agent_id  = coder_agent.dev.id
   subdomain = true
 }
