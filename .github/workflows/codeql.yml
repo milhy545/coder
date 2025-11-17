@@ -18,9 +18,7 @@ on:
     branches: [ "main" ]
   schedule:
     - cron: '19 22 * * 5'
-    workflow_dispatch:
-
-jobs:
+    jobs:
   analyze:
     name: Analyze (${{ matrix.language }})
     # Runner size impacts CodeQL analysis time. To learn more, please see:
